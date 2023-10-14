@@ -4,33 +4,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frontend Practice 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
+    <title>Frontend Practice 1</title>
 </head>
 <body>
     <div id="contenedor">
         <header>
-        <nav id="nav1">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-baseline-density-small" width="52" height="52" viewBox="0 0 24 24" stroke-width="2" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M4 3h16" />
-                    <path d="M4 9h16" />
-                    <path d="M4 15h16" />
-                    <path d="M4 21h16" />
-                </svg>
-                <a href="#" class="pSmall">Live</a>
-                <a href="#" class="pSmall">Push</a>
-                <a href="#" class="pSmall">Link</a>
-                <a href="#" class="pSmall">Shop</a>
-                <a href="#" class="pSmall">Packs</a>
-                <a href="#" class="pSmall">Help</a>
-                <a href="#" class="pSmall">More+</a>
-            </nav>
-            <nav id="nav2">
-                <a href="#" class="pSmall">Try live for free</a>
-                <a href="#" class="pSmall">Account</a>
-                <a href="#" class="pSmall">Log out</a>
-            </nav>
+            <div id="navPrincipal">
+                <div id="nav1">
+                    <div id="divIcon">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-baseline-density-small" width="52" height="52" viewBox="0 0 24 24" stroke-width="2" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M4 3h16" />
+                            <path d="M4 9h16" />
+                            <path d="M4 15h16" />
+                            <path d="M4 21h16" />
+                        </svg>
+                    </div>
+                    <nav>
+                        <a href="#" class="pSmall">Live</a>
+                        <a href="#" class="pSmall">Push</a>
+                        <a href="#" class="pSmall">Link</a>
+                        <a href="#" class="pSmall">Shop</a>
+                        <a href="#" class="pSmall">Packs</a>
+                        <a href="#" class="pSmall">Help</a>
+                        <a href="#" class="pSmall">More+</a>
+                    </nav>
+                </div>
+                <div id="nav2">
+                    <nav>
+                        <a href="#" class="pSmall"><span>Try live for free</span></a>
+                        <a href="#" class="pSmall">Account</a>
+                        <a href="#" class="pSmall">Log out</a>
+                    </nav>
+                </div>
+            </div>
             <hr>
         </header>
 
@@ -40,26 +51,31 @@
                 <a href="#">Jobs</a>
             </nav>
 
-            <h1>Ableton</h1> <!--?Falta img fondo-->
+            <div id="h1">
+                <h1>Ableton</h1> 
+            </div>
 
-        
             <section id="section1" class="sections">
-                <p class="pBig">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem dolorum, fugit rerum perspiciatis?</p>
+                <p class="pBig">Lorem ipsum <span>dolor sit</span> amet <span>consectetur</span>, adipisicing elit. Rem dolorum, fugit rerum perspiciatis?</p>
                 <p class="pSmall">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
                 <div id="divSec1">
-                    <img src="img/img1sec1.jpg" class="imgBig">
-                    <img src="img/img2sec1.jpg" class="imgSmall">
+                    <div id="divImg1">
+                        <img src="img/img1sec1.jpg" class="imgBig">
+                    </div>
+                    <div id="divImg2">
+                        <img src="img/img2sec1.jpg" class="imgSmall">
+                    </div>
                 </div>
             </section>
-
+            
             <section id="section2" class="sections">
                 <p class="pBig">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem dolorum, fugit rerum perspiciatis?</p>
                 <p class="pSmall">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 
                 <div id="divSec2">
-                    <video src="#" controls loop></video>
+                    <video src="#" class="video" controls loop></video>
                 </div>
+                <legend>lorem</legend> <!--!falta poner a la izq-->
             </section>
 
             <section id="section3" class="sections">
@@ -67,11 +83,13 @@
                 <p class="pSmall">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 
                 <div id="divSec3">
-                    <div id="divSec3-2">
+                    <div id="divImg3">
                         <img src="img/img2sec1.jpg" class="imgSmall">
                         <img src="img/img2sec1.jpg" class="imgSmall">
                     </div>
-                    <img src="img/img1sec1.jpg" class="imgBig">
+                    <div id="divImg4">
+                        <img src="img/img1sec1.jpg" class="imgBig">
+                    </div>
                 </div>
             </section>
 
@@ -80,18 +98,32 @@
                 <p class="pSmall">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 
                 <div id="divSec4">
-                    <video src="#" controls loop></video>
+                    <video src="#" class="video"  controls loop></video>
                 </div>
+                <legend>lorem</legend> <!--!falta poner a la izq-->
             </section>
 
             <section id="section5" class="sections">
                 <p class="pBig">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem dolorum, fugit rerum perspiciatis?</p>
                 <p class="pSmall">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
                 <div id="divSec5">
+                    <div id="divImg5">
+                        <img src="img/img2sec1.jpg" class="imgSmall">
+                    </div>
+                    <div id="divImg6">
+                        <img src="img/img1sec1.jpg" class="imgBig">
+                    </div>
+                </div>
+            </section>
+
+            <section id="section6" class="sections">
+                <p class="pBig">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem dolorum, fugit rerum perspiciatis?</p>
+                <p class="pSmall">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                <div id="divSec6">
                     <img src="img/img1sec1.jpg" class="imgBig">
                     <div>
-                        <p class="pBig">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni veritatis eius quod voluptatem, architecto excepturi.</p>
+                        <p class="pBig">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni veritatis eius quod voluptatem, architecto excepturi.<br><a href="#"><span>See latest jobs ></span></a></p>
                     </div>
                 </div>
             </section>
@@ -118,8 +150,8 @@
                     <a href="#" class="pSmall">Push 1 trade-in initiative ></a>
                 </div>
                 <div id="divf1-3">
-                    <h4>Sign up to our newslettern</h4>
-                    <p class="pSmall">Enter yout email address to stay up to date with the latest offers, tutorials,downloads and more.</p>
+                    <h4>Sign up to our newsletter<br>
+                    Enter yout email address to stay up to date with the latest offers, tutorials,downloads and more.</h4>
                     <form>
                         <input type="email" placeholder="Email Address">
                         <button>Sign up</button>

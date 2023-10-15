@@ -29,6 +29,10 @@ html {
     padding: 0;
 }
 
+h3 {
+    text-decoration: underline;
+}
+
 p {
     text-align: center;
     margin: 5rem;
@@ -198,3 +202,33 @@ h1 {
     background-color: var(--celeste);
     margin: 7rem;
 }
+
+/**Footer*/
+
+#ableton {
+    text-align: start;
+    font-size: 4rem;
+    font-weight: bolder;
+}
+
+#divFP {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+#divFP a {
+    padding: .3rem;
+}
+
+#divF1-1, #divF1-2, #divF1-3, #divF2-1, #divF2-2, #divF2-3{
+    padding: 0 5rem 5rem 5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#fRedes img {
+    width: 2.5rem;
+}
+
+

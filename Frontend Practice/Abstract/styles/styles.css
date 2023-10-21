@@ -1,0 +1,175 @@
+
+/**Variables*/
+:root{
+    --negro: #000000;
+    --morado: #dadbf1;
+    --blanco: #ffffff;
+    --azul: #4C5FD5;
+}
+
+/**Estilos Generales*/
+
+* {
+    font-size: 62.5%;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: var(--negro);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3rem;
+}
+
+nav img, footer img {
+    background-color: var(--blanco);
+    border-radius: 40%;
+    width: 1rem;
+    margin: .1rem;
+}
+
+nav button {
+    padding: .3rem 1rem;
+    border-radius: .3rem;
+    margin: .25rem;
+    color: var(--blanco);
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 1.2rem;
+}
+
+input[placeholder] {
+    font-weight: bold;
+} 
+
+main img {
+    width: 3.5rem;
+    margin: 1rem;
+}
+
+h4 {
+    font-size: .8rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--azul);
+}
+
+footer {
+    background-color: var(--negro);
+    color: var(--blanco);
+    font-weight: bold;
+}
+
+footer a {
+    color: var(--blanco);
+}
+
+footer h4 {
+    font-size: .6rem;
+}
+
+h3 {
+    font-size: .8rem;
+    padding: 1rem 0;
+}
+
+/**Estilos Especificos*/
+
+#nav1, #nav2 {
+    display: flex;
+    align-items: center;
+    color: var(--blanco);
+    padding: 2.5rem;
+}
+
+#nav1 p {
+    padding: .1rem;
+}
+
+#navB1 {
+    border: .01rem solid var(--blanco);
+    background-color: #343434;
+}
+
+#navB2 {
+    border: .01rem solid var(--azul);
+    background-color: var(--azul);
+}
+
+#sectionSearch {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--morado);
+    height: 15rem;
+}
+
+#inputSearch {
+    width: 26rem;
+    height: 1.8rem;
+    padding: 1.2rem .5rem;
+    border: .01rem solid var(--negro);
+}
+
+#mainSection {
+    display: grid;
+    grid: repeat(3,1fr) / repeat(2,1fr);
+    margin: 2.5rem;
+    padding: 2rem;
+}
+
+.sections {
+    display: flex;
+    align-items: center;
+    margin: 1.5rem;
+}
+
+.sections p {
+    padding: .6rem 0;
+    font-size: .7rem;
+}
+
+#footerSection {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    height: 12rem;
+    padding: 1.5rem 0;
+}
+
+#footerSection a {
+    padding: .1rem;
+}
+
+#footerSection div:last-child {
+    justify-content: flex-end;
+}
+
+.footerDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+#contactUs {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+#copy {
+    position: relative;
+    top:65%
+}
+
+#copy p {
+    font-size: .8rem;
+}

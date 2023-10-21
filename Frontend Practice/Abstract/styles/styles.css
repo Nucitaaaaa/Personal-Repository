@@ -142,7 +142,7 @@ h3 {
     display: flex;
     align-items: flex-start;
     justify-content: space-around;
-    height: 12rem;
+    height: 13rem;
     padding: 1.5rem 0;
 }
 
@@ -167,7 +167,7 @@ h3 {
 
 #copy {
     position: relative;
-    top:65%
+    top:60%
 }
 
 #copy p {

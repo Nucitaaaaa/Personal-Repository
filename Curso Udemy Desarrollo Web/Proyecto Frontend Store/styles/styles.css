@@ -1,0 +1,85 @@
+
+/*Variables globales*/
+
+:root {
+    --verdeoscuro: #90bead;
+    --verdeclaro: #C1D8C3;
+    --amarillo: #F5E8B7;
+    --negro: #000;
+    --blanco: #fff;
+
+    --fuente: font-family: 'Roboto Mono', monospace;
+}
+
+/*Estilos Generales*/
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /*10px = 1rem*/
+    font-family: var(--fuente);
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: var(--verdeclaro);
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+p {
+    font-size: 1.5rem;
+    color: var(--blanco);
+}
+
+a {
+    text-decoration: none;
+    color: var(--blanco);
+    font-family: var(--fuente);
+}
+
+img {
+    /* width: 100%; */
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color: var(--verdeclaro);
+}
+
+h1 {font-size: 4rem;}
+h2 {font-size: 3.2rem;}
+h3 {font-size: 2.4rem;}
+
+/*Estilos Especificos*/
+
+/*Header*/
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.header__logo {
+    margin: 3rem 0;
+}
+
+/*Nav*/
+
+.nav {
+    display: flex;
+    justify-content: center;
+    background-color: var(--verdeoscuro);
+    padding: 1rem 0;
+    gap: 5rem; /*Separa elementos que esten dentro de un contenedor con flex*/
+}
+
+.nav__link {
+    font-size: 2rem;
+}
+
+.nav__link--activo, .nav__link:hover {
+    color: var(--verdeclaro);
+}

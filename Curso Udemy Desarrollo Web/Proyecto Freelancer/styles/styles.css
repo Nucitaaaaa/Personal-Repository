@@ -1,0 +1,271 @@
+
+:root {
+    /**Colores*/
+    --azulOscuro: #053B50;
+    --azulMedio: #176B87;
+    --azulClaro: #00ADB5;
+    --aguamarina: #64CCC5;  
+    --blanco: #EEEEEE;
+    --negro: #000000;
+    --morado: #B799FF;
+    --morado2: #916DB3;
+
+    /**Fuentes*/
+    --fuenteP: monospace;
+}
+
+/**Inicio*/
+
+html {
+    font-size: 62.5%;/*Se utiliza para poder usar los rem de una forma mas sencilla*/
+    box-sizing: border-box;
+    scroll-snap-type: y mandatory;
+}
+
+.servicios, .navPrincipal, .form {
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 16px; /*Se utiliza para poder usar los rem de una forma mas sencilla*/
+    font-family: var(--fuenteP);
+    background-image: linear-gradient(0deg, rgba(194,199,201,1) 0%, rgba(229,232,236,1) 70%);
+}
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto 0 auto;
+    padding: 0.6rem;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--azulMedio);
+}
+
+.name {
+    font-size: 2rem;
+}
+
+.freelancer {
+    font-size: 2.5rem;
+    color: var(--azulMedio);
+}
+
+.navPrincipal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.navBg {
+    background-color: var(--azulMedio);
+}
+
+a {
+    color: var(--blanco);
+    text-decoration: none;
+    font-weight: 200;
+}
+
+.bgImg{
+    background-image: url(../img/fondo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 37rem;
+    padding: 2rem;
+    position: relative;
+}
+
+.imgContenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    color: var(--blanco);
+    background-color: rgba(17, 29, 41, 0.7);
+}
+
+.freelancer2 {
+    font-size: 2.5rem;
+    color: var(--blanco);
+}
+
+.dir {
+    display: flex;
+}
+
+.button {
+    color: var(--blanco);
+    background-color: var(--azulMedio);
+    padding: 0.8rem 1.6rem;
+    border-radius: 0.6rem;
+    margin: 0.7rem;
+    font-size: 1.7rem;
+    font-weight: bold;
+    border: none;
+}
+
+.button:hover{
+    background-color: var(--azulClaro);
+    color: var(--negro);
+    cursor: pointer;
+}
+
+.enviar .boton {
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+}
+
+.derecha {
+    justify-content: flex-end;
+}
+
+.sombra {
+-webkit-box-shadow: 7px 7px 6px 1px rgba(133,133,133,0.51);
+-moz-box-shadow: 7px 7px 6px 1px rgba(133,133,133,0.51);
+box-shadow: 7px 7px 6px 1px rgba(133,133,133,0.51);
+background-color: var(--blanco);
+padding: 2rem;
+margin-top: 2rem;
+margin-bottom: 2rem;
+border-radius: 0.7rem;
+}
+
+.servicios {
+display: grid;
+grid: 10rem 15rem / 1fr 1fr; /*Primero rows despues colums*/
+column-gap: 2rem;
+}
+
+.centrarimgserv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgserv {
+    width: 9rem;
+    height: 9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--azulClaro);
+    border-radius: 50%;
+}
+
+.servicio1 p, .servicio2 p {
+    text-align: center;
+    line-height: 1.7;
+}
+
+.form {
+    background-color: var(--azulClaro);
+    height: 50rem;
+    width: min(60rem, 100%);
+    margin: 0 auto; /*Se centra cuando no tiene un div*/
+    border-radius: 2rem;
+    padding: 1rem;
+}
+
+
+.form fieldset {
+    border: none;
+}
+
+.form legend {
+    color: var(--blanco);
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    text-align: center;
+
+}
+
+.campo {
+    margin: 1.3rem;
+}
+
+.campo label {
+    color: var(--blanco);
+    font-weight: bold;
+    margin: 1rem;
+}
+
+.input {
+    height: 75%;
+    width: 100%;
+    border: none;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+footer {
+    text-align: center;
+    margin: 2.5rem;
+}
+
+/**responsive*/
+@media (min-width: 480px) {
+    .navPrincipal {
+    }
+
+    .boton1 {
+        width: auto;
+    }
+}     
+
+@media (min-width: 768px) {
+    html {
+        scroll-snap-type: y proximity;
+    }
+    .navPrincipal {
+        flex-direction: row;
+        text-align: center;
+    }
+
+    .boton1 {
+        width: auto;
+    }
+
+    .camposForm {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto 20rem;
+        gap: 1rem;
+    }
+
+    .enviar button {
+        width: auto;
+    }
+
+    .campo:nth-child(3),.campo:nth-child(4){
+        grid-column: 1/3;
+    }
+}
+
+@media (min-width: 1140px) {
+    .navPrincipal {
+        flex-wrap: wrap;
+    }
+}   
+
+@media (min-width: 1440px) {
+    .navPrincipal {
+    }
+}   

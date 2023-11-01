@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Freelancer</title>
+    <link rel="preload" href="styles/normalize.css" as="style">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="preload" href="styles/styles.css" as="style">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+
+    <header>
+        <h1 class="freelancer">Freelacer</h1>
+        <h2 class="name">~ María Paula Buenaventura García ~</h2>
+    </header>
+
+    <div class="navBg">
+        <nav class="navPrincipal contenedor">
+            <a href="index.html">Inicio</a>
+            <a href="sobreMi.html">Sobre Mi</a>
+            <a href="contactos.html">Contactos</a>
+        </nav>
+    </div>
+
+    <section class
+    ="bgImg">
+        <div class="imgContenedor">
+            <h2 class="freelancer2">Freelacer en Diseño y Desarrollo Web</h2>
+            <div class="dir">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin-star" width="48" height="48" viewBox="0 0 24 24" stroke-width="1.5" stroke="#176B87" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M15 11a3 3 0 1 0 -3.908 2.86" />
+                    <path d="M11.059 21.25a2 2 0 0 1 -.472 -.35l-4.244 -4.243a8 8 0 1 1 13.646 -6.079" />
+                    <path d="M17.8 20.817l-2.172 1.138a.392 .392 0 0 1 -.568 -.41l.415 -2.411l-1.757 -1.707a.389 .389 0 0 1 .217 -.665l2.428 -.352l1.086 -2.193a.392 .392 0 0 1 .702 0l1.086 2.193l2.428 .352a.39 .39 0 0 1 .217 .665l-1.757 1.707l.414 2.41a.39 .39 0 0 1 -.567 .411l-2.172 -1.138z" />
+                </svg>
+                <p>Ibagué,Tolima</p>
+            </div>
+            <a href="#" class="button">Contactar</a>
+        </div>
+    </section>  
+
+    <main class="contenedor sombra">
+    <h2>Mis Servicios</h2>
+    
+    <div class="servicios">
+        <section class="servicio1">
+            <h3>Diseño Web</h3>
+            <div class="centrarimgserv">
+                <div class="imgserv">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-device-desktop-code" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M12.5 16h-8.5a1 1 0 0 1 -1 -1v-10a1 1 0 0 1 1 -1h16a1 1 0 0 1 1 1v8" />
+                        <path d="M7 20h4" />
+                        <path d="M9 16v4" />
+                        <path d="M20 21l2 -2l-2 -2" />
+                        <path d="M17 17l-2 2l2 2" />
+                    </svg>
+                </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, facilis perferendis.</p>
+        </section>
+
+        <section class="servicio1">
+            <h3>Aplicaciones Web</h3>
+            <div class="centrarimgserv">
+                <div class="imgserv">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-device-mobile-code" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M11.5 21h-3.5a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v8" />
+                        <path d="M20 21l2 -2l-2 -2" />
+                        <path d="M17 17l-2 2l2 2" />
+                        <path d="M11 4h2" />
+                        <path d="M12 17v.01" />
+                    </svg>
+                </div>
+            </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, facilis perferendis.</p>
+        </section>
+    </div>
+    
+        <section>
+            <h2>Contacto</h2>
+
+            <form class="form">
+                <fieldset>
+                    <legend>Formulario de contacto</legend>
+
+                    <div class="camposForm">
+                        <div class="campo">
+                            <label> Nombre </label>
+                            <input type="text" placeholder="Escribe tu nombre aquí" class="input">
+                        </div>
+
+                        <div class="campo">
+                            <label> Telefono </label>
+                            <input type="tel" placeholder="Escribe tu numero aquí" class="input">
+                        </div>
+
+                        <div class="campo correo">
+                            <label> Correo </label>
+                            <input type="email" placeholder="Escribe tu correo aquí" class="input"></label>
+                        </div>
+
+                        <div class="campo">
+                            <label> Mensaje </label>
+                            <textarea class="input"></textarea>
+                        </div>
+                    </div>   
+
+                    <div class="derecha flex">
+                        <input class="button boton" type="submit" value="Enviar">
+                    </div> 
+
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;Todos los derechos reservados</p>
+    </footer>
+
+</body>
+</html>

@@ -1,17 +1,16 @@
 
-/*Variables globales*/
+/*?Variables globales*/
 
 :root {
-    --verdeOscuro: #748E63;
+    --verdeOscuro:#3A4D39;
+    --verdeMedio: #748E63;
     --verdeClaro: #99B080;
-    --gris: #bdbdbd;
-    --negro: #000;
-    --blanco: #fff;
+    --blanco: #ECE3CE;
 
-    --fuente: font-family: 'Kanit', sans-serif;
+    --fuente: 'Kanit', sans-serif;
 }
 
-/*Estilos Generales*/
+/**Estilos Generales*/
 
 html {
     box-sizing: border-box;
@@ -50,7 +49,7 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 5rem;
     color: var(--blanco);
 }
 
@@ -59,26 +58,25 @@ h3 {font-size: 2.4rem;}
 
 /*Estilos Especificos*/
 
-/*Header*/
+/**Header*/
 
 .header {
     display: flex;
     justify-content: center;
 }
 
-.header--span {
+h1 span{
     color: var(--verdeOscuro);
-    font-size: 4rem;
-    line-height: 0%;
-    padding-bottom: 2rem;
+    font-size: 5rem;
+    margin-bottom: 2rem;
 }
 
-/*Nav*/
+/**Nav*/
 
 .nav {
     display: flex;
     justify-content: center;
-    background-color: var(--verdeOscuro);
+    background-color: var(--verdeMedio);
     padding: 1rem 0;
     gap: 5rem; /*Separa elementos que esten dentro de un contenedor con flex*/
 }
@@ -93,43 +91,55 @@ h3 {font-size: 2.4rem;}
 }
 
 .nav__link--activo, .nav__link:hover {
-    color: var(--verdeClaro);
+    color: var(--verdeOscuro);
 }
 
-/*Main*/
+/**Main*/
 
 .contenedor {
-    /* width: 100%; */
+    max-width: 120rem;
+    margin: 0 auto;
 }
 
 .grid {
-
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
 }
 
 .producto {
-
+    background-color: var(--verdeMedio);
+    padding: 1.2rem;
 }
 
 .producto__img {
-
+    width: 100%;
 }
 
 .producto__info {
 
 }
 
-.producto__name {
+.producto__name,.producto__price {
+    font-family: var(--fuente);
+    margin: .5rem 0;
+    text-align: center;
+    line-height: 1.2;
+}
 
+.producto__name {
+    color: var(--verdeOscuro);
+    font-size: 3rem;
 }
 
 .producto__price {
-
+    font-size: 2.5rem;
 }
 
-/*Footer*/
+/**Footer*/
 
 .footer {
-    background-color: var(--verdeOscuro);
+    background-color: var(--verdeMedio);
     padding: .8rem 0;
     margin-top: 2rem;
 }
@@ -137,4 +147,13 @@ h3 {font-size: 2.4rem;}
 .footer__text {
     text-align: center;
     font-size: 1.8rem;
+}
+
+/*?Media Query*/
+
+@media (min-width: 768px) {
+
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }

@@ -1,7 +1,82 @@
+/*Variables*/
+
+:root {
+    --gris: #e8e5e480;
+    --grisOscuro: #7f7f7f;
+    --negro: #000000;
+    --blanco: #ffffff;
+
+    --fuente: sans-serif;
+}
+
 
 /*Estilos Generales*/
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: var(--fuente);
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
 img {
     width: 300px;
 }
 
+a {
+    text-decoration: none;
+    color: var(--negro);
+    font-size: 1.4rem;
+    font-weight: lighter;
+}
+
 /*Estilos Especificos*/
+
+.header {
+    margin: 2.5rem;
+}
+
+.header__nav {
+    margin: 0 auto;
+    background-color: var(--gris);
+    width: fit-content;
+    border-radius: 2rem;
+    padding: 1.5rem .4rem;
+}
+
+.header__link {
+    padding: 2.2rem;
+}
+
+.header__link--select {
+    background-color: var(--blanco);
+    padding: 1rem 2.4rem;
+    border-radius: 3rem;
+}
+
+.section1 {
+    text-align: center;
+}
+
+.section1__content {
+    font-size: 6.5rem;
+    padding: 5rem 5rem 0 5rem;
+    line-height: 1.3;
+}
+
+.section1__div1 {
+    display: flex;
+    justify-content: center;
+}
+
+.div1__p {
+    padding: 0 1rem;
+    font-size: 1.5rem;
+}
+
+
+/*?Media querys*/
+

@@ -12,7 +12,7 @@ def traductor(word):
             
         for j,k in lenguajeHacker.items():
             if i.lower() == j:
-                traduccion += k      
+                traduccion += k 
 
     print(f'Texto normal:\n{word}\n\nTexto traducido:\n{traduccion}')
     

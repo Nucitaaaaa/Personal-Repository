@@ -1,0 +1,4 @@
+
+function fpp(num){
+    num 
+}

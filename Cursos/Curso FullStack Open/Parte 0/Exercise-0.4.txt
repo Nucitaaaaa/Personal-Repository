@@ -1,0 +1,53 @@
+
+sequenceDiagram Exercise 0.4
+
+    participant browser
+    participant server
+    participant user
+
+    //User writes a note in the input 
+    //User press the button to send the new note
+
+    browser ->> server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
+
+    activate server
+        // New note is added to the JSON
+        server -->> browser: GET https://studies.cs.helsinki.fi/exampleapp/notes
+    deactivate server
+
+
+    //browser reloads 
+
+
+    browser ->> server: GET https://studies.cs.helsinki.fi/exampleapp/main.css
+    
+    activate server
+        server -->> browser: the css file
+    deactivate server
+
+
+    browser ->> server: GET https://studies.cs.helsinki.fi/exampleapp/main.js
+
+    activate server
+        server -->> browser: the JavaScript file
+    deactivate server
+
+
+    browser ->> server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
+
+    activate server
+        server -->> browser: the JSON file 
+    deactivate server
+    
+    //Browser displays all notes in the json file including the new note
+
+
+
+
+
+
+
+
+   
+    
+    

@@ -1,0 +1,28 @@
+
+sequenceDiagram Exercise 0.6
+
+    participant browser
+    participant server
+    participant user
+
+    //User writes a note in the input 
+    //User press the button to send the new note
+
+    browser ->> server: POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+
+    activate server
+        //New note is added to the JSON
+    deactivate server
+
+     //Browser displays all notes in the json file including the new note
+
+
+
+
+
+
+
+
+   
+    
+    

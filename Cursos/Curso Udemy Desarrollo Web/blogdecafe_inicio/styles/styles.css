@@ -1,0 +1,56 @@
+
+:root {
+    --headings: /*fuente*/;
+    --parrafos: /*fuente*/;
+
+    --cafe: #784D3C;
+    --blanco: #fff;
+    --negro: #000;
+}
+
+/*Estilos Globales*/
+
+html {
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after { box-sizing: inherit; }
+
+body {
+    font-family: var(--parrafos);
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+h1, h2, h3, h4 { font-size: var(--headings);}
+
+h1 { font-size: 5rem; }
+
+h2 { font-size: 4rem; }
+
+h3 { font-size: 3rem; }
+
+h4 { font-size: 2rem;}
+
+img { max-width: 100%; }
+
+a { text-decoration: none;}
+
+/*Estilos Especificos*/
+
+.contenedor {
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.header {
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; /*de un lado a otro - de arriba a abajo*/
+    height: 60rem;
+}

@@ -2,7 +2,6 @@
 import { useState } from 'react'
 
 const Button = (props) => {
-
   return (
     <button onClick={props.handleClick}>
       {props.text}
@@ -10,30 +9,29 @@ const Button = (props) => {
   )
 }
 
-const Votes = (props) => {
+const Statistic = (props) => {
   return (
   <>
     <tr>
       <td>{props.text}</td>
-      <td>{props.vote}</td>
+      <td>{props.content}</td>
     </tr>
   </>
   )
 }
 
 const Statistics = (props) => {
-
   return (
     <div>
       <h2>Statistics:</h2>
       <table>
         <tbody>
-          <Votes text='Good' vote={props.voteG}/>
-          <Votes text='Neutral' vote={props.voteN}/>
-          <Votes text='Bad' vote={props.voteB}/>
-          <Votes text='All' vote={props.voteG + props.voteN + props.voteB}/>
-          <Votes text='Average' vote={props.avg / props.all}/>
-          <Votes text='Positives' vote={`${(props.voteG / (props.voteG + props.voteN + props.voteB)) * 100}%`}/>
+          <Statistic text='Good' content={props.voteG}/>
+          <Statistic text='Neutral' content={props.voteN}/>
+          <Statistic text='Bad' content={props.voteB}/>
+          <Statistic text='All' content={props.voteG + props.voteN + props.voteB}/>
+          <Statistic text='Average' content={props.avg / props.all}/>
+          <Statistic text='Positives' content={`${(props.voteG / (props.voteG + props.voteN + props.voteB)) * 100}%`}/>
         </tbody>
       </table>
     </div>
